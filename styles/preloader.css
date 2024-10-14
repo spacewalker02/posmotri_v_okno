@@ -1,6 +1,12 @@
+#parent {
+  position: relative;
+}
+
 .preloader {
   position: absolute;
   inset: 0;
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
