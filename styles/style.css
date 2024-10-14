@@ -320,7 +320,7 @@ input[type='checkbox'] + span {
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   content: '';
-  position: absolute;
+  position: inherit;
   background-color: #fff;
   inset: 2px 2px;
   width: 15px;
