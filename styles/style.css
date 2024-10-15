@@ -18,6 +18,7 @@ fieldset {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  border: none;
 }
 
 ul,
@@ -28,10 +29,6 @@ ol {
 
 html {
   block-size: 100%;
-}
-
-fieldset {
-  border: none;
 }
 
 .page {
@@ -80,10 +77,6 @@ fieldset {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-}
-
-.search-form__textfield {
-  appearance: none;
 }
 
 .search-form__fieldset-title {
@@ -164,6 +157,10 @@ fieldset {
   flex-direction: column;
   flex-grow: 1;
   color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 16.2px;
+  font-weight: 400;
   text-overflow: ellipsis;
 }
 
@@ -179,13 +176,6 @@ fieldset {
   text-overflow: ellipsis;
 }
 
-.content__video-card-description {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  line-height: 16.2px;
-  font-weight: 400;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -197,7 +187,8 @@ fieldset {
 }
 
 .search-form__label {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: fit-content;
   cursor: pointer;
 }
@@ -222,6 +213,7 @@ fieldset {
   font-size: inherit;
   background-color: transparent;
   min-width: 225px;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -247,10 +239,11 @@ input[type='checkbox'] + span {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  height: 19px;
-  width: 19px;
+  height: 17px;
+  width: 17px;
   background-color: transparent;
   outline: 1px solid #fff;
+  align-self: center;
 }
 
 .button {
@@ -311,7 +304,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   content: '';
   position: inherit;
   background-color: #fff;
-  inset: 2px 2px;
+  inset: 1px 1px;
   width: 15px;
   height: 15px;
   display: flex;
